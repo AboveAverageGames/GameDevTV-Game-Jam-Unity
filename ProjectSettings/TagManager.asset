@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Dam
+  - Log
+  - Pol
+  - Food
   layers:
   - Default
   - TransparentFX

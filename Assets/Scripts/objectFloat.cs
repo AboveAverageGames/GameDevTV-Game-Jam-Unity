@@ -36,5 +36,17 @@ public class objectFloat : MonoBehaviour
         {
             move = false;
         }
+        if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Log")
+        {
+            Debug.Log("PlayerLog");
+        }
+        if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Pol")
+        {
+            Debug.Log("PlayerPol");
+        }
+        if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Food")
+        {
+            Debug.Log("PlayerFood");
+        }
     }
 }
