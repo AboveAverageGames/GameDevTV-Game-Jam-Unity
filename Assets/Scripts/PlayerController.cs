@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public void MovePlayer()
     {
         //Creates a Vector for the movement read from the Input of the player
-        Vector3 movement = new Vector3(move.x, 0, move.y);
+        Vector3 movement = new Vector3(- move.x, 0, -move.y);
 
         //Applies the movement to the player keeping track of the world space and time
         transform.Translate( movement * speed * Time.deltaTime, Space.World);
