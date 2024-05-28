@@ -19,6 +19,10 @@ public class foodManagement : MonoBehaviour
     void Update()
     {
         hungerVal = hungerVal - decay;
+        if (hungerVal > 1)
+        {
+            hungerVal = 1;
+        }
         hungerBar.value = hungerVal;
     }
 }

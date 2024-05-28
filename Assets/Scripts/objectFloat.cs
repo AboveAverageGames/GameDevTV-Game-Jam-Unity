@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class objectFloat : MonoBehaviour
 {
     float speed = 0.01f;
+    public float foodGain = 1;
     bool move = true;
+    public foodManagement food;
+    public PlayerController pMove;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       food = GameObject.Find("Player").GetComponent<foodManagement>();
+       pMove = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -42,11 +47,13 @@ public class objectFloat : MonoBehaviour
         }
         if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Pol")
         {
-            Debug.Log("PlayerPol");
+            pMove.isSlowed = true;
+            Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Food")
         {
-            Debug.Log("PlayerFood");
+            food.hungerVal = food.hungerVal + foodGain;
+            Destroy(gameObject);
         }
     }
 }

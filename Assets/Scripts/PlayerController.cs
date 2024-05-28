@@ -8,8 +8,14 @@ public class PlayerController : MonoBehaviour
 
     public float speed;
     private Vector2 move;
+    float storeSpeed;
+    public float slow = 0.5f;
+    public bool isSlowed = false;
 
-
+    void Start()
+    {
+        storeSpeed = speed;
+    }
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -44,5 +50,17 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MovePlayer();
+        if (isSlowed==true)
+        {
+            StartCoroutine(Slowed());
+            isSlowed = false;
+        }
+    }
+    
+    IEnumerator Slowed()
+    {
+        speed = speed * slow;
+        yield return new WaitForSeconds(5);
+        speed = storeSpeed;
     }
 }
