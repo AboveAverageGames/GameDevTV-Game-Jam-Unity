@@ -1567,6 +1567,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271167279}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1300949197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300949199}
+  - component: {fileID: 1300949198}
+  m_Layer: 0
+  m_Name: --- ObjectPool ---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1300949198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300949197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89fcceda8587124f85c2b2cecc89d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logPrefab: {fileID: 4425460482843717328, guid: 7408b7a00f93caf46baf6c0107c7f801, type: 3}
+  pollutionPrefab: {fileID: 9211456290813230813, guid: 86349c66aa59a034e9d212a2806e9ded, type: 3}
+  foodPrefab: {fileID: 4149800597596189241, guid: acee245790b5e59478f92e37c2038c80, type: 3}
+--- !u!4 &1300949199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300949197}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2263.3965, y: -875.76184, z: -3214.8206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1363502215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,6 +2326,7 @@ SceneRoots:
   - {fileID: 364390366}
   - {fileID: 2097198920}
   - {fileID: 1799020142}
+  - {fileID: 1300949199}
   - {fileID: 861170828470926859}
   - {fileID: 3092366702690342566}
   - {fileID: 1529059609}
