@@ -7,7 +7,12 @@ public class ObjectPool : MonoBehaviour
 
     public static ObjectPool instance;
 
-    private List<GameObject> pooledObjects = new List<GameObject>();
+    private List<GameObject> pooledLogs = new List<GameObject>();
+
+    private List<GameObject> pooledFood = new List<GameObject>();
+
+    private List<GameObject> pooledPollution = new List<GameObject>();
+
     private int amountToPool = 10;
 
     [SerializeField] private GameObject logPrefab;
@@ -24,7 +29,6 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -33,15 +37,29 @@ public class ObjectPool : MonoBehaviour
         FoodPool();
     }
 
+    //Log Object pooling here
     void LogPool()
     {
         for (int i = 0; i < amountToPool; i++)
         {
             GameObject obj = Instantiate(logPrefab);
             obj.SetActive(false);
-            pooledObjects.Add(obj);
+            pooledLogs.Add(obj);
         }
     }
+    public GameObject GetPooledLog()
+    {
+        for (int i = 0; i < pooledLogs.Count; i++)
+        {
+            if (!pooledLogs[i].gameObject.activeInHierarchy)
+            {
+                return pooledLogs[i];
+            }
+        }
+        return null;
+    }
+
+    //Pollution Object Pooling here
 
     void PollutionPool()
     {
@@ -49,23 +67,44 @@ public class ObjectPool : MonoBehaviour
         {
             GameObject obj = Instantiate(pollutionPrefab);
             obj.SetActive(false);
-            pooledObjects.Add(obj);
+            pooledPollution.Add(obj);
         }
     }
 
+    public GameObject GetPooledPollution()
+    {
+        for (int i = 0; i < pooledPollution.Count; i++)
+        {
+            if (!pooledPollution[i].gameObject.activeInHierarchy)
+            {
+                return pooledPollution[i];
+            }
+        }
+        return null;
+    }
+
+
+    //Food Object Pooling Right Here
     void FoodPool()
     {
         for (int i = 0; i < amountToPool; i++)
         {
             GameObject obj = Instantiate(foodPrefab);
             obj.SetActive(false);
-            pooledObjects.Add(obj);
+            pooledFood.Add(obj);
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject GetPooledFood()
     {
-        
+        for (int i = 0; i < pooledFood.Count; i++)
+        {
+            if (!pooledFood[i].gameObject.activeInHierarchy)
+            {
+                return pooledFood[i];
+            }
+        }
+        return null;
     }
+
 }
