@@ -43,7 +43,12 @@ public class objectFloat : MonoBehaviour
         }
         if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Log")
         {
-            Debug.Log("PlayerLog");
+            speed = 0;
+            GetComponent<Rigidbody>().isKinematic = false;
+            transform.parent = collision.transform;
+            transform.localRotation = Quaternion.Euler(90, 0, -90);
+            transform.localPosition = new Vector3(0, 0, 2);
+            gameObject.tag = "HeldLog";
         }
         if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Pol")
         {
@@ -53,6 +58,11 @@ public class objectFloat : MonoBehaviour
         if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Food")
         {
             food.hungerVal = food.hungerVal + foodGain;
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "Dam" & this.gameObject.tag == "HeldLog")
+        {
+            Debug.Log("yippe");
             Destroy(gameObject);
         }
     }

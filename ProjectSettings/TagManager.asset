@@ -8,6 +8,7 @@ TagManager:
   - Log
   - Pol
   - Food
+  - HeldLog
   layers:
   - Default
   - TransparentFX
