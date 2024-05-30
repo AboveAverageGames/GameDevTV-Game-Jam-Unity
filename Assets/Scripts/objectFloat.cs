@@ -18,6 +18,12 @@ public class objectFloat : MonoBehaviour
        pMove = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
+    //Makes the item able to move
+    private void OnEnable()
+    {
+        move = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -31,7 +37,7 @@ public class objectFloat : MonoBehaviour
         }
         if (transform.localPosition.y <= -5)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
 
     }
@@ -48,12 +54,12 @@ public class objectFloat : MonoBehaviour
         if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Pol")
         {
             pMove.isSlowed = true;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
         if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Food")
         {
             food.hungerVal = food.hungerVal + foodGain;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
