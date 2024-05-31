@@ -11,6 +11,7 @@ public class objectFloat : MonoBehaviour
     bool move = true;
     public foodManagement food;
     public PlayerController pMove;
+    public buildTheDam dam;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class objectFloat : MonoBehaviour
         Debug.Log("Stored speed is" + storedSpeed);
         food = GameObject.Find("Player").GetComponent<foodManagement>();
         pMove = GameObject.Find("Player").GetComponent<PlayerController>();
+        dam = GameObject.Find("--- THE DAM ---").GetComponent<buildTheDam>();
     }
 
     //Makes the item able to move
@@ -56,12 +58,14 @@ public class objectFloat : MonoBehaviour
         {
             move = false;
         }
-        if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Log")
+        if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Log" & pMove.carry == false)
         {
+            pMove.carry = true;
             speed = 0;
+            GetComponent<BoxCollider>().isTrigger = true;
             GetComponent<Rigidbody>().isKinematic = false;
             transform.parent = collision.transform;
-            transform.localRotation = Quaternion.Euler(90, 0, -90);
+            transform.localRotation = Quaternion.Euler(90, 0, 180);
             transform.localPosition = new Vector3(0, 0, 2);
             gameObject.tag = "HeldLog";
         }
@@ -75,11 +79,24 @@ public class objectFloat : MonoBehaviour
             food.hungerVal = food.hungerVal + foodGain;
             gameObject.SetActive(false);
         }
+      //  if (collision.gameObject.tag == "Dam" & gameObject.tag == "HeldLog") < Moved down but keeping here for now
+      //  {
+      //      //Resets the log to defualt state so it can be pooled again
+      //      Debug.Log("yippe");
+      //      gameObject.tag = "Log";
+      //      transform.SetParent(null);
+      //      gameObject.SetActive(false);
+      //      speed = storedSpeed;
+      //  }
+    }
+    void OnTriggerEnter(Collider collision)
+    {
         if (collision.gameObject.tag == "Dam" & gameObject.tag == "HeldLog")
         {
-            //Resets the log to defualt state so it can be pooled again
-            Debug.Log("yippe");
+            pMove.carry = false;
+            dam.logCount++;
             gameObject.tag = "Log";
+            GetComponent<BoxCollider>().isTrigger = false;
             transform.SetParent(null);
             gameObject.SetActive(false);
             speed = storedSpeed;

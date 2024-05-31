@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     float storeSpeed;
     public float slow = 0.5f;
     public bool isSlowed = false;
+    public bool carry = false;
 
     void Start()
     {

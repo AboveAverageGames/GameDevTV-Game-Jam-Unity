@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5428404527229713511}
   - component: {fileID: 8648308674623560725}
   - component: {fileID: 6730302776666266744}
-  - component: {fileID: 2695561046407631793}
   - component: {fileID: 1889647450881316923}
   - component: {fileID: 2700661901647019765}
+  - component: {fileID: 4392990123251485967}
   m_Layer: 0
   m_Name: Log
   m_TagString: Log
@@ -86,29 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2695561046407631793
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4425460482843717328}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.60950595
-  m_Height: 2.7971606
-  m_Direction: 1
-  m_Center: {x: -0.10950584, y: 0.036873102, z: -0.00000011920929}
 --- !u!114 &1889647450881316923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,6 +101,7 @@ MonoBehaviour:
   foodGain: 1
   food: {fileID: 0}
   pMove: {fileID: 0}
+  dam: {fileID: 0}
 --- !u!54 &2700661901647019765
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -151,3 +129,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 20
   m_CollisionDetection: 0
+--- !u!65 &4392990123251485967
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4425460482843717328}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
