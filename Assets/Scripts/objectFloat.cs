@@ -18,8 +18,8 @@ public class objectFloat : MonoBehaviour
     {
         storedSpeed = speed;
         speed = storedSpeed;
-        Debug.Log("Speed of Game Object is " + speed);
-        Debug.Log("Stored speed is" + storedSpeed);
+
+
         food = GameObject.Find("Player").GetComponent<foodManagement>();
         pMove = GameObject.Find("Player").GetComponent<PlayerController>();
         dam = GameObject.Find("--- THE DAM ---").GetComponent<buildTheDam>();

@@ -8,7 +8,11 @@ public class Spawner : MonoBehaviour
     public float spawnTimer;
     private float spawnTimerStored;
 
+    //For Positoning Of items
+    private float xAxisRandomSpawn;
+    public float damWidthIncrease;
 
+  
     private float randomItemToBeSpawned;
 
     // Start is called before the first frame update
@@ -25,17 +29,20 @@ public class Spawner : MonoBehaviour
         SpawnTimer();
         if (spawnTimer < 0)
         {
-            
-            //spawnLog();
-
             RandomSpawner();
-
             //Resets Spawn Timer
             spawnTimer = spawnTimerStored;
         }
     }
 
-
+    //Gets a random location to spawn items
+    public Vector3 randomPlace()
+    {
+        //Finds a random X position on the Dam (WHICH INCREASES WITH EACH WAVE)
+        xAxisRandomSpawn = Random.Range((-11 - damWidthIncrease),(11 + damWidthIncrease));
+        return new Vector3 (xAxisRandomSpawn, 0, 45);
+        
+    }
 
 
     //This chooses a random number between 1 and 3, and then Each value decides what item is spawned
@@ -44,10 +51,10 @@ public class Spawner : MonoBehaviour
     {
         randomItemToBeSpawned = Random.Range(1, 5);
 
+        //50% chance for it to be log that is spawned
         if (randomItemToBeSpawned <=2)
         {
             spawnLog();
-            Debug.Log("Trying to spawn a damn log");
         }
         else if (randomItemToBeSpawned == 3)
         {
@@ -66,13 +73,15 @@ public class Spawner : MonoBehaviour
     }
 
 
+
+    //--- Spawn stuff below ---
     void spawnLog()
     {
         GameObject log = ObjectPool.instance.GetPooledLog();
 
         if (log != null ) 
         {
-          log.transform.position = transform.position;
+          log.transform.position = randomPlace();
           log.transform.localRotation = Quaternion.Euler(90, 0, -90);
             log.SetActive(true);
         }
@@ -84,7 +93,7 @@ public class Spawner : MonoBehaviour
 
         if (food != null)
         {
-            food.transform.position = transform.position;
+            food.transform.position = randomPlace();
             food.SetActive(true);
         }
     }
@@ -96,7 +105,7 @@ public class Spawner : MonoBehaviour
 
         if (pollution != null)
         {
-            pollution.transform.position = transform.position;
+            pollution.transform.position = randomPlace();
             pollution.SetActive(true);
         }
     }
