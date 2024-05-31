@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class objectFloat : MonoBehaviour
-{
+{ 
+    float storedSpeed;
     float speed = 0.01f;
     public float foodGain = 1;
     bool move = true;
@@ -14,19 +15,27 @@ public class objectFloat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       food = GameObject.Find("Player").GetComponent<foodManagement>();
-       pMove = GameObject.Find("Player").GetComponent<PlayerController>();
+        storedSpeed = speed;
+        speed = storedSpeed;
+        Debug.Log("Speed of Game Object is " + speed);
+        Debug.Log("Stored speed is" + storedSpeed);
+        food = GameObject.Find("Player").GetComponent<foodManagement>();
+        pMove = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     //Makes the item able to move
     private void OnEnable()
     {
+        storedSpeed = speed;
+        speed = storedSpeed;
         move = true;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (move == true)
         {
             transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z - speed);
@@ -66,10 +75,14 @@ public class objectFloat : MonoBehaviour
             food.hungerVal = food.hungerVal + foodGain;
             gameObject.SetActive(false);
         }
-        if (collision.gameObject.tag == "Dam" & this.gameObject.tag == "HeldLog")
+        if (collision.gameObject.tag == "Dam" & gameObject.tag == "HeldLog")
         {
+            //Resets the log to defualt state so it can be pooled again
             Debug.Log("yippe");
-            Destroy(gameObject);
+            gameObject.tag = "Log";
+            transform.SetParent(null);
+            gameObject.SetActive(false);
+            speed = storedSpeed;
         }
     }
 }

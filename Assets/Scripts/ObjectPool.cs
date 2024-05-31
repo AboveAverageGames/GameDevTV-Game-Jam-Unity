@@ -54,8 +54,10 @@ public class ObjectPool : MonoBehaviour
             if (!pooledLogs[i].gameObject.activeInHierarchy)
             {
                 return pooledLogs[i];
+               
             }
         }
+        Debug.Log("No logs here sir");
         return null;
     }
 

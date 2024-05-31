@@ -9,6 +9,7 @@ TagManager:
   - Pol
   - Food
   - HeldLog
+  - ObjectPool
   layers:
   - Default
   - TransparentFX

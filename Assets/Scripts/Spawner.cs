@@ -39,20 +39,21 @@ public class Spawner : MonoBehaviour
 
 
     //This chooses a random number between 1 and 3, and then Each value decides what item is spawned
-    // 1: Log, 2:Food 3:Pollution
+    // 1 or 2: Log, 2:Food 3:Pollution
     void RandomSpawner()
     {
-        randomItemToBeSpawned = Random.Range(1, 4);
+        randomItemToBeSpawned = Random.Range(1, 5);
 
-        if (randomItemToBeSpawned == 1)
+        if (randomItemToBeSpawned <=2)
         {
             spawnLog();
+            Debug.Log("Trying to spawn a damn log");
         }
-        else if (randomItemToBeSpawned == 2)
+        else if (randomItemToBeSpawned == 3)
         {
             spawnFood();
         }
-        else if (randomItemToBeSpawned == 3)
+        else if (randomItemToBeSpawned == 4)
         {
             spawnPollution();
         }
@@ -72,6 +73,7 @@ public class Spawner : MonoBehaviour
         if (log != null ) 
         {
           log.transform.position = transform.position;
+          log.transform.localRotation = Quaternion.Euler(90, 0, -90);
             log.SetActive(true);
         }
     }
