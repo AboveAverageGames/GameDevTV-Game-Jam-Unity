@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class objectFloat : MonoBehaviour
 { 
     float storedSpeed;
-    float speed = 0.01f;
+    float speed = 0.03f;
     public float foodGain = 1;
     bool move = true;
     public foodManagement food;
     public PlayerController pMove;
     public buildTheDam dam;
+
+    public GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,10 @@ public class objectFloat : MonoBehaviour
         speed = storedSpeed;
 
 
+        //Assigns Game Manager script
+        gameManager = GameObject.Find("--- Game Manager ---").GetComponent<GameManager>();
+
+        //Assigning Components
         food = GameObject.Find("Player").GetComponent<foodManagement>();
         pMove = GameObject.Find("Player").GetComponent<PlayerController>();
         dam = GameObject.Find("--- THE DAM ---").GetComponent<buildTheDam>();
@@ -100,6 +106,9 @@ public class objectFloat : MonoBehaviour
             transform.SetParent(null);
             gameObject.SetActive(false);
             speed = storedSpeed;
+
+            //Game manager stuff
+            gameManager.logsPlacedThisLayer++;
         }
     }
 }
