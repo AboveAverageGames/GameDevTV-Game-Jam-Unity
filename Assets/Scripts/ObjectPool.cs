@@ -13,9 +13,11 @@ public class ObjectPool : MonoBehaviour
 
     private List<GameObject> pooledPollution = new List<GameObject>();
 
-    private int amountToPool = 10;
+    private int amountToPool = 15;
 
-    [SerializeField] private GameObject logPrefab;
+    [SerializeField] private GameObject logPrefab1;
+    [SerializeField] private GameObject logPrefab2;
+    [SerializeField] private GameObject logPrefab3;
     [SerializeField] private GameObject pollutionPrefab;
     [SerializeField] private GameObject foodPrefab;
 
@@ -32,21 +34,46 @@ public class ObjectPool : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LogPool();
+        //Pools 3 different Prefabs Of logs
+        LogPool1();
+        LogPool2();
+        LogPool3();
+
         PollutionPool();
         FoodPool();
     }
 
     //Log Object pooling here
-    void LogPool()
+    void LogPool1()
     {
-        for (int i = 0; i < amountToPool; i++)
+        for (int i = 0; i < amountToPool / 3; i++)
         {
-            GameObject obj = Instantiate(logPrefab);
+            GameObject obj = Instantiate(logPrefab1);
             obj.SetActive(false);
             pooledLogs.Add(obj);
         }
     }
+
+    void LogPool2()
+    {
+        for (int i = 0; i < amountToPool / 3; i++)
+        {
+            GameObject obj = Instantiate(logPrefab2);
+            obj.SetActive(false);
+            pooledLogs.Add(obj);
+        }
+    }
+
+    void LogPool3()
+    {
+        for (int i = 0; i < amountToPool / 3; i++)
+        {
+            GameObject obj = Instantiate(logPrefab3);
+            obj.SetActive(false);
+            pooledLogs.Add(obj);
+        }
+    }
+
     public GameObject GetPooledLog()
     {
         for (int i = 0; i < pooledLogs.Count; i++)
