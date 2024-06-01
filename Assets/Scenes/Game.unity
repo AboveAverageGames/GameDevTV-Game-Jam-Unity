@@ -228,6 +228,7 @@ MonoBehaviour:
   slow: 0.5
   isSlowed: 0
   carry: 0
+  gameManager: {fileID: 0}
 --- !u!114 &91037088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,7 +1125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fd85980c7b3a9848973a8a362fd5c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  additionalLogsSpawned: 2
+  logsPlacedThisLayer: 0
+  additionalLogsAllowedToBeSpawned: 3
+  logsSpawnedThisLayer: 0
+  canAnyMoreLogsBeSpawned: 0
   currentWave: 0
 --- !u!1 &550450326
 GameObject:
@@ -1269,6 +1273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24761c0a564912d42b35e7bfb4bc853a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   spawnTimer: 2
   damWidthIncrease: 0
 --- !u!1 &994620879

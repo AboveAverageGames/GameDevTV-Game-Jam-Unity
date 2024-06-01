@@ -5,6 +5,11 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
 
+    //Game manager stuuuff
+    public GameManager gameManager;
+
+
+    //Spawn timers
     public float spawnTimer;
     private float spawnTimerStored;
 
@@ -12,12 +17,16 @@ public class Spawner : MonoBehaviour
     private float xAxisRandomSpawn;
     public float damWidthIncrease;
 
-  
+    //Float to decide random item to be spawned
     private float randomItemToBeSpawned;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        //Assigns GameManager script to gameManager
+        gameManager = GameObject.Find("--- Game Manager ---").GetComponent<GameManager>();
+
         //Stores spawn timer
         spawnTimerStored = spawnTimer;
     }
@@ -52,9 +61,10 @@ public class Spawner : MonoBehaviour
         randomItemToBeSpawned = Random.Range(1, 5);
 
         //50% chance for it to be log that is spawned
-        if (randomItemToBeSpawned <=2)
+        if (randomItemToBeSpawned <=2 && gameManager.canAnyMoreLogsBeSpawned)
         {
             spawnLog();
+            gameManager.logsSpawnedThisLayer++;
         }
         else if (randomItemToBeSpawned == 3)
         {
