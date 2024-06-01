@@ -1125,8 +1125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fd85980c7b3a9848973a8a362fd5c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeLogsInScene: {fileID: 0}
+  activeLogInPlayersMouth: {fileID: 0}
   logsPlacedThisLayer: 0
-  additionalLogsAllowedToBeSpawned: 3
+  additionalLogsAllowedToBeSpawned: 2
   logsSpawnedThisLayer: 0
   canAnyMoreLogsBeSpawned: 0
   currentWave: 0
