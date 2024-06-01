@@ -2071,37 +2071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a525d3b9c74b094d95b88725060a907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logCount: 0
-  L12:
-  - {fileID: 8018254082021936947}
-  - {fileID: 6958987881322914311}
-  - {fileID: 142034026393749038}
-  - {fileID: 8017652577041380086}
-  - {fileID: 9067637021916595375}
-  L14:
-  - {fileID: 7983497238559756043}
-  - {fileID: 1809989820142059024}
-  - {fileID: 8774260918747030983}
-  - {fileID: 2924316636318197484}
-  - {fileID: 838808978764505861}
-  L16:
-  - {fileID: 3563595611218537670}
-  - {fileID: 1888429118111680278}
-  - {fileID: 8910209583969266987}
-  - {fileID: 3014073638589485990}
-  - {fileID: 2139712406898259436}
-  L18:
-  - {fileID: 9119741805158898418}
-  - {fileID: 8906094677864129158}
-  - {fileID: 8454118345193818700}
-  - {fileID: 5948016284485900017}
-  - {fileID: 744316348872088623}
-  L20:
-  - {fileID: 6327341172411185936}
-  - {fileID: 8059566024197251042}
-  - {fileID: 2232125839297223198}
-  - {fileID: 5063724357422384004}
-  - {fileID: 4739295525628503605}
+  logCount: 1
   L12rows: []
   L12T: []
 --- !u!1 &1909959625
@@ -2509,7 +2479,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1134714066672644336, guid: f7cd939d3f2068041bcdb0e3b88fd6cd, type: 3}
+  - {fileID: 2313967797043713140, guid: ad669a7c10ee3f84bae3a82f7bcea9d2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2856,7 +2826,7 @@ GameObject:
   - component: {fileID: 5856667685329374170}
   m_Layer: 0
   m_Name: La8
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3438,7 +3408,7 @@ GameObject:
   - component: {fileID: 2766174349639901759}
   m_Layer: 0
   m_Name: L18
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3889,7 +3859,7 @@ GameObject:
   - component: {fileID: 5975760851702655307}
   m_Layer: 0
   m_Name: Log_Straight_04
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4647,7 +4617,7 @@ GameObject:
   - component: {fileID: 2318338522314352976}
   m_Layer: 0
   m_Name: Log_Straight_02
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5268,7 +5238,7 @@ GameObject:
   - component: {fileID: 3910239193612995918}
   m_Layer: 0
   m_Name: La25
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5598,7 +5568,7 @@ GameObject:
   - component: {fileID: 3295716546474119476}
   m_Layer: 0
   m_Name: Log_Flare_84
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5614,7 +5584,7 @@ GameObject:
   - component: {fileID: 4424551816196130650}
   m_Layer: 0
   m_Name: La15
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7047,7 +7017,7 @@ GameObject:
   - component: {fileID: 7831994927255469924}
   m_Layer: 0
   m_Name: Log_Bent_15
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7427,7 +7397,7 @@ GameObject:
   - component: {fileID: 5038085275095704534}
   m_Layer: 0
   m_Name: L3
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7950,7 +7920,7 @@ GameObject:
   - component: {fileID: 3089076458905920720}
   m_Layer: 0
   m_Name: Log_Straight_04
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8788,24 +8758,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815724229622071096}
   m_Mesh: {fileID: 4022983157289280936, guid: f7cd939d3f2068041bcdb0e3b88fd6cd, type: 3}
---- !u!1 &1603045496986607264
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2625957552934368685}
-  - component: {fileID: 9154444199768848964}
-  - component: {fileID: 3535293985543604609}
-  m_Layer: 0
-  m_Name: Log_Bent_79
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &1608823024797641636
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9416,7 +9368,7 @@ GameObject:
   - component: {fileID: 1217964420402194769}
   m_Layer: 0
   m_Name: Log_Straight_05
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9565,7 +9517,7 @@ GameObject:
   - component: {fileID: 5453941407460444144}
   m_Layer: 0
   m_Name: La5
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9631,7 +9583,7 @@ GameObject:
   - component: {fileID: 8692792447793556574}
   m_Layer: 0
   m_Name: La12
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9927,7 +9879,7 @@ GameObject:
   - component: {fileID: 4780310386902174286}
   m_Layer: 0
   m_Name: La17
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10707,7 +10659,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2625957552934368685}
   - {fileID: 4656829350521534225}
   - {fileID: 645506420717119853}
   - {fileID: 3332563767435920034}
@@ -10918,7 +10869,7 @@ GameObject:
   - component: {fileID: 5659406514161297180}
   m_Layer: 0
   m_Name: La20
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11297,7 +11248,7 @@ GameObject:
   - component: {fileID: 1459745170487193063}
   m_Layer: 0
   m_Name: La28
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11395,7 +11346,7 @@ GameObject:
   - component: {fileID: 1367301620780391877}
   m_Layer: 0
   m_Name: L16
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11718,7 +11669,7 @@ GameObject:
   - component: {fileID: 8433820909607722285}
   m_Layer: 0
   m_Name: L17
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12758,7 +12709,7 @@ GameObject:
   - component: {fileID: 7703488273191683815}
   m_Layer: 0
   m_Name: L15
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13106,21 +13057,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1459745170487193063}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2625957552934368685
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603045496986607264}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.00008644104, y: 0.20023368, z: 0.0015985107}
-  m_LocalScale: {x: 9.998, y: 41.725, z: 9.998}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2103231650668628781}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2630155593857212054
 MeshFilter:
@@ -14274,7 +14210,7 @@ GameObject:
   - component: {fileID: 5656979799872668670}
   m_Layer: 0
   m_Name: L14
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14363,7 +14299,7 @@ GameObject:
   - component: {fileID: 7922436323063982342}
   m_Layer: 0
   m_Name: Layer16
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14576,7 +14512,7 @@ GameObject:
   - component: {fileID: 3713081741407803104}
   m_Layer: 0
   m_Name: La14
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14880,7 +14816,7 @@ GameObject:
   - component: {fileID: 4367128742167971846}
   m_Layer: 0
   m_Name: Layer14
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14924,7 +14860,7 @@ GameObject:
   - component: {fileID: 523991341428027116}
   m_Layer: 0
   m_Name: Log_Flare_121
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14984,7 +14920,7 @@ GameObject:
   - component: {fileID: 3342283153208742524}
   m_Layer: 0
   m_Name: La19
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15399,7 +15335,7 @@ GameObject:
   - component: {fileID: 7567530149427018191}
   m_Layer: 0
   m_Name: Log_Straight_05
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15680,7 +15616,7 @@ GameObject:
   - component: {fileID: 2476204378785015599}
   m_Layer: 0
   m_Name: L7
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16042,7 +15978,7 @@ GameObject:
   - component: {fileID: 1588244050156024795}
   m_Layer: 0
   m_Name: Log_Flare_120
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17019,7 +16955,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1134714066672644336, guid: f7cd939d3f2068041bcdb0e3b88fd6cd, type: 3}
+  - {fileID: 2313967797043713140, guid: ad669a7c10ee3f84bae3a82f7bcea9d2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17327,48 +17263,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!23 &3535293985543604609
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603045496986607264}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2313967797043713140, guid: f7cd939d3f2068041bcdb0e3b88fd6cd, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &3537529014405799715
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17390,7 +17284,7 @@ GameObject:
   - component: {fileID: 4189851658688183822}
   m_Layer: 0
   m_Name: Log_Bent_14
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17436,7 +17330,7 @@ GameObject:
   - component: {fileID: 2866085207468941403}
   m_Layer: 0
   m_Name: La16
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18389,7 +18283,7 @@ GameObject:
   - component: {fileID: 239760250358699502}
   m_Layer: 0
   m_Name: L11
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19108,7 +19002,7 @@ GameObject:
   - component: {fileID: 2383342711130131681}
   m_Layer: 0
   m_Name: Layer12
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19141,7 +19035,7 @@ GameObject:
   - component: {fileID: 7360029817901056832}
   m_Layer: 0
   m_Name: Log_Straight_04
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19426,7 +19320,7 @@ GameObject:
   - component: {fileID: 3939709191025204877}
   m_Layer: 0
   m_Name: Log_Flare_122
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20061,7 +19955,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1134714066672644336, guid: f7cd939d3f2068041bcdb0e3b88fd6cd, type: 3}
+  - {fileID: 2313967797043713140, guid: ad669a7c10ee3f84bae3a82f7bcea9d2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21115,7 +21009,7 @@ GameObject:
   - component: {fileID: 2833562766447409029}
   m_Layer: 0
   m_Name: L2
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21190,7 +21084,7 @@ GameObject:
   - component: {fileID: 1173110237603222886}
   m_Layer: 0
   m_Name: Log_Flare_109
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21355,7 +21249,7 @@ GameObject:
   - component: {fileID: 7828285639569487135}
   m_Layer: 0
   m_Name: L13
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21425,7 +21319,7 @@ GameObject:
   - component: {fileID: 2868762448403496929}
   m_Layer: 0
   m_Name: Log_Bent_24
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21738,7 +21632,7 @@ GameObject:
   - component: {fileID: 95641833689926482}
   m_Layer: 0
   m_Name: La30
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23245,7 +23139,7 @@ GameObject:
   - component: {fileID: 7300879735676428730}
   m_Layer: 0
   m_Name: Log_Bent_17
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23516,7 +23410,7 @@ GameObject:
   - component: {fileID: 2103231650668628781}
   m_Layer: 0
   m_Name: La3
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23691,7 +23585,7 @@ GameObject:
   - component: {fileID: 9101629489520016732}
   m_Layer: 0
   m_Name: La29
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24414,7 +24308,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1134714066672644336, guid: f7cd939d3f2068041bcdb0e3b88fd6cd, type: 3}
+  - {fileID: 2313967797043713140, guid: ad669a7c10ee3f84bae3a82f7bcea9d2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26627,7 +26521,7 @@ GameObject:
   - component: {fileID: 3125640230664273498}
   m_Layer: 0
   m_Name: Log_Straight_02
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26912,7 +26806,7 @@ GameObject:
   - component: {fileID: 5330302063028319042}
   m_Layer: 0
   m_Name: L10
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27599,7 +27493,7 @@ GameObject:
   - component: {fileID: 3814079056287695710}
   m_Layer: 0
   m_Name: La24
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27865,7 +27759,7 @@ GameObject:
   - component: {fileID: 2979253795615694280}
   m_Layer: 0
   m_Name: Layer18
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27883,7 +27777,7 @@ GameObject:
   - component: {fileID: 6761908319187951245}
   m_Layer: 0
   m_Name: L5
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28188,7 +28082,7 @@ GameObject:
   - component: {fileID: 8080035471353438419}
   m_Layer: 0
   m_Name: Log_Straight_03
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28232,7 +28126,7 @@ GameObject:
   - component: {fileID: 1547055106207720871}
   m_Layer: 0
   m_Name: Log_Flare_78
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28307,7 +28201,7 @@ GameObject:
   - component: {fileID: 2697067282300111764}
   m_Layer: 0
   m_Name: Log_Flare_123
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28515,7 +28409,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1134714066672644336, guid: f7cd939d3f2068041bcdb0e3b88fd6cd, type: 3}
+  - {fileID: 2313967797043713140, guid: ad669a7c10ee3f84bae3a82f7bcea9d2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29248,7 +29142,7 @@ GameObject:
   - component: {fileID: 5135136122296748645}
   m_Layer: 0
   m_Name: Log_Bent_20
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29264,7 +29158,7 @@ GameObject:
   - component: {fileID: 7609065479611220661}
   m_Layer: 0
   m_Name: La26
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29571,7 +29465,7 @@ GameObject:
   - component: {fileID: 5929727012566405753}
   m_Layer: 0
   m_Name: Log_Flare_117
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30351,7 +30245,7 @@ GameObject:
   - component: {fileID: 6714548723822189861}
   m_Layer: 0
   m_Name: L1
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31732,7 +31626,7 @@ GameObject:
   - component: {fileID: 2895718422005746529}
   m_Layer: 0
   m_Name: La7
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31945,7 +31839,7 @@ GameObject:
   - component: {fileID: 50428520872479904}
   m_Layer: 0
   m_Name: Log_Bent_78
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32652,7 +32546,7 @@ GameObject:
   - component: {fileID: 8655940086026576331}
   m_Layer: 0
   m_Name: L8
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32693,7 +32587,7 @@ GameObject:
   - component: {fileID: 8512547756464114497}
   m_Layer: 0
   m_Name: Log_Flare_118
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32771,7 +32665,7 @@ GameObject:
   - component: {fileID: 5765192213628510425}
   m_Layer: 0
   m_Name: Log_Bent_18
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33471,7 +33365,7 @@ GameObject:
   - component: {fileID: 3117337262635812868}
   m_Layer: 0
   m_Name: La2
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33629,7 +33523,7 @@ GameObject:
   - component: {fileID: 4024442610170661127}
   m_Layer: 0
   m_Name: L12
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33647,7 +33541,7 @@ GameObject:
   - component: {fileID: 3041993537534030681}
   m_Layer: 0
   m_Name: L6
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33699,7 +33593,7 @@ GameObject:
   - component: {fileID: 6346587364066756841}
   m_Layer: 0
   m_Name: Log_Straight_04
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33894,7 +33788,7 @@ GameObject:
   - component: {fileID: 7013729552739105128}
   m_Layer: 0
   m_Name: Log_Bent_13
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34716,7 +34610,7 @@ GameObject:
   - component: {fileID: 5210436626573331975}
   m_Layer: 0
   m_Name: Log_Straight_03
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34792,7 +34686,7 @@ GameObject:
   - component: {fileID: 1164269334545412824}
   m_Layer: 0
   m_Name: Layer10
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36005,7 +35899,7 @@ GameObject:
   - component: {fileID: 5335414221969018557}
   m_Layer: 0
   m_Name: La1
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36039,7 +35933,7 @@ GameObject:
   - component: {fileID: 5304253501046226924}
   m_Layer: 0
   m_Name: La11
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36156,7 +36050,7 @@ GameObject:
   - component: {fileID: 1470186294632337553}
   m_Layer: 0
   m_Name: La9
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36172,7 +36066,7 @@ GameObject:
   - component: {fileID: 461753510532313521}
   m_Layer: 0
   m_Name: La6
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36442,7 +36336,7 @@ GameObject:
   - component: {fileID: 4169110608223526522}
   m_Layer: 0
   m_Name: La27
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36588,7 +36482,7 @@ GameObject:
   - component: {fileID: 1092129051140091025}
   m_Layer: 0
   m_Name: L9
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37508,7 +37402,7 @@ GameObject:
   - component: {fileID: 113962373085510429}
   m_Layer: 0
   m_Name: Log_Flare_119
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37842,7 +37736,7 @@ GameObject:
   - component: {fileID: 5823256082605324773}
   m_Layer: 0
   m_Name: La23
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39172,7 +39066,7 @@ GameObject:
   - component: {fileID: 7034980937435034870}
   m_Layer: 0
   m_Name: La13
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39701,7 +39595,7 @@ GameObject:
   - component: {fileID: 5405566360141928846}
   m_Layer: 0
   m_Name: Log_Flare_127
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39717,7 +39611,7 @@ GameObject:
   - component: {fileID: 5441339412093428591}
   m_Layer: 0
   m_Name: La22
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39733,7 +39627,7 @@ GameObject:
   - component: {fileID: 7597213653073344063}
   m_Layer: 0
   m_Name: La18
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40000,7 +39894,7 @@ GameObject:
   - component: {fileID: 2796741901603725621}
   m_Layer: 0
   m_Name: Log_Flare_77
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40365,7 +40259,7 @@ GameObject:
   - component: {fileID: 3262611426310435334}
   m_Layer: 0
   m_Name: L4
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40483,7 +40377,7 @@ GameObject:
   - component: {fileID: 9191836070381944080}
   m_Layer: 0
   m_Name: La10
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40619,7 +40513,7 @@ GameObject:
   - component: {fileID: 7591808603644854912}
   m_Layer: 0
   m_Name: Layer20
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40645,7 +40539,7 @@ GameObject:
   - component: {fileID: 8034786848099844942}
   m_Layer: 0
   m_Name: Log_Flare_128
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40761,7 +40655,7 @@ GameObject:
   - component: {fileID: 8037637354387175173}
   m_Layer: 0
   m_Name: La21
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40884,7 +40778,7 @@ GameObject:
   - component: {fileID: 1272450238369775962}
   m_Layer: 0
   m_Name: Log_Bent_16
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40964,14 +40858,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &9154444199768848964
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603045496986607264}
-  m_Mesh: {fileID: 5016303628708214662, guid: f7cd939d3f2068041bcdb0e3b88fd6cd, type: 3}
 --- !u!4 &9158086647449762679
 Transform:
   m_ObjectHideFlags: 0
@@ -40998,7 +40884,7 @@ GameObject:
   - component: {fileID: 4548691690657551739}
   m_Layer: 0
   m_Name: La4
-  m_TagString: Untagged
+  m_TagString: Ignore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

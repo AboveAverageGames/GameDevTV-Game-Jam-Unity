@@ -85,21 +85,13 @@ public class objectFloat : MonoBehaviour
             food.hungerVal = food.hungerVal + foodGain;
             gameObject.SetActive(false);
         }
-      //  if (collision.gameObject.tag == "Dam" & gameObject.tag == "HeldLog") < Moved down but keeping here for now
-      //  {
-      //      //Resets the log to defualt state so it can be pooled again
-      //      Debug.Log("yippe");
-      //      gameObject.tag = "Log";
-      //      transform.SetParent(null);
-      //      gameObject.SetActive(false);
-      //      speed = storedSpeed;
-      //  }
     }
     void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Dam" & gameObject.tag == "HeldLog")
         {
             pMove.carry = false;
+            dam.L12rows[dam.logCount].SetActive(true);
             dam.logCount++;
             gameObject.tag = "Log";
             GetComponent<BoxCollider>().isTrigger = false;
