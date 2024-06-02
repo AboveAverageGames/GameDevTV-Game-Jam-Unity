@@ -11,10 +11,9 @@ public class buildTheDam : MonoBehaviour
     public GameManager GM;
     public GameObject Scene;
     public GameObject WaterMax;
-    //float ScenePos = 0;
     int howManyLogs;
     public int logC = 0;
-    //float speed = 0.000002f;
+    float speed = 0.01f;
 
     //0.7 rise per wave
     //-2.2 start
@@ -44,13 +43,13 @@ public class buildTheDam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //float step = speed * Time.deltaTime;
+        float step = speed * Time.deltaTime;
         if (damRow[logCount].tag == "Ignore")
         {
             logCount++;
         }
 
-        //Scene.transform.position = Vector3.MoveTowards(WaterMax.transform.position, WaterMax.transform.position , step);
+        Scene.transform.position = Vector3.MoveTowards(Scene.transform.position, WaterMax.transform.position , step);
 
         if (GM.waveCompleted == true)
         {
