@@ -309,8 +309,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hungerVal: 1
-  decay: 0.0001
   hungerBar: {fileID: 151518565}
+  boy: {fileID: 0}
+  girl: {fileID: 0}
+  wife: {fileID: 0}
 --- !u!54 &91037091
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -348,15 +350,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 54040bdc9baa7dd45b9484d53028862a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.4737072
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54040bdc9baa7dd45b9484d53028862a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.4737072
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54040bdc9baa7dd45b9484d53028862a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.4737072
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54040bdc9baa7dd45b9484d53028862a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -397,6 +399,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 54040bdc9baa7dd45b9484d53028862a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 54040bdc9baa7dd45b9484d53028862a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2721175108441768338, guid: 54040bdc9baa7dd45b9484d53028862a, type: 3}
       propertyPath: m_TagString
@@ -795,9 +801,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1271167280}
   - {fileID: 792307025}
   - {fileID: 532751714}
+  - {fileID: 1852678118}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &364390365
@@ -1128,10 +1134,12 @@ MonoBehaviour:
   activeLogsInScene: {fileID: 0}
   activeLogInPlayersMouth: {fileID: 0}
   logsPlacedThisLayer: 0
+  waveCompleted: 0
   additionalLogsAllowedToBeSpawned: 2
   logsSpawnedThisLayer: 0
   canAnyMoreLogsBeSpawned: 0
   currentWave: 0
+  totalLogsNeededToCompleteDamLayer: 10
 --- !u!1 &550450326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  BD: {fileID: 1852678119}
   spawnTimer: 2
   damWidthIncrease: 0
 --- !u!1 &994620879
@@ -1560,7 +1569,7 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 345812999}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1271167281
 MeshCollider:
@@ -1785,6 +1794,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1460710054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460710055}
+  m_Layer: 0
+  m_Name: WaterMax
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1460710055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460710054}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1570306535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f8dc391042755104f9a2113bc6c917cb, type: 3}
@@ -2046,7 +2086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852678116}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2057,7 +2097,7 @@ Transform:
   - {fileID: 7922436323063982342}
   - {fileID: 2979253795615694280}
   - {fileID: 7591808603644854912}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 345812999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1852678119
 MonoBehaviour:
@@ -2072,8 +2112,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logCount: 1
-  L12rows: []
-  L12T: []
+  damRow: []
+  damT: []
+  GM: {fileID: 545536590}
+  Scene: {fileID: 345812998}
+  WaterMax: {fileID: 1460710054}
+  logC: 0
 --- !u!1 &1909959625
 GameObject:
   m_ObjectHideFlags: 0
@@ -41287,11 +41331,12 @@ SceneRoots:
   - {fileID: 1909959628}
   - {fileID: 1716632198}
   - {fileID: 545536589}
-  - {fileID: 1852678118}
   - {fileID: 91037086}
+  - {fileID: 1271167280}
   - {fileID: 345812999}
   - {fileID: 364390366}
   - {fileID: 2097198920}
   - {fileID: 1799020142}
   - {fileID: 1300949199}
   - {fileID: 939092182}
+  - {fileID: 1460710055}

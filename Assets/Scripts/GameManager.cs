@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public int logsPlacedThisLayer;
     private int layersCompletedThisWave = 0;
 
-    private bool waveCompleted;
+    public bool waveCompleted;
 
     //Log spawning Stuffs
     public int additionalLogsAllowedToBeSpawned;
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public int currentWave;
 
     //Game starts at 10 logs for a layer
-    private int totalLogsNeededToCompleteDamLayer = 10;
+    public int totalLogsNeededToCompleteDamLayer = 10;
 
 
     // Start is called before the first frame update

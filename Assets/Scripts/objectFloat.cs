@@ -91,7 +91,7 @@ public class objectFloat : MonoBehaviour
         if (collision.gameObject.tag == "Dam" & gameObject.tag == "HeldLog")
         {
             pMove.carry = false;
-            dam.L12rows[dam.logCount].SetActive(true);
+            dam.damRow[dam.logCount].SetActive(true);
             dam.logCount++;
             gameObject.tag = "Log";
             GetComponent<BoxCollider>().isTrigger = false;

@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour
 
     //Game manager stuuuff
     public GameManager gameManager;
-
+    public buildTheDam BD;
 
     //Spawn timers
     public float spawnTimer;
@@ -88,7 +88,7 @@ public class Spawner : MonoBehaviour
     void spawnLog()
     {
         GameObject log = ObjectPool.instance.GetPooledLog();
-
+        BD.logC++;
         if (log != null ) 
         {
           log.transform.position = randomPlace();
