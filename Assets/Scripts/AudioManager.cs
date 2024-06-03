@@ -33,6 +33,9 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.clip = backgroundMusic3FamilyAlive;
         musicSource.Play();
+
+        AmbientMusic.clip = waterRunning;
+        AmbientMusic.Play();
     }
 
     //Public method that will play the SFX that is fed into it

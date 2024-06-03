@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class objectFloat : MonoBehaviour
 { 
     float storedSpeed;
-    float speed = 0.03f;
+    private float speed = 10.3f;
     public float foodGain = 1;
     bool move = true;
     public foodManagement food;
@@ -51,11 +51,11 @@ public class objectFloat : MonoBehaviour
 
         if (move == true)
         {
-            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z - speed);
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z - speed * Time.deltaTime);
         }
         if (move == false)
         {
-            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y - speed, transform.localPosition.z);
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y - speed, transform.localPosition.z * Time.deltaTime);
         }
         if (transform.localPosition.y <= -5)
         {
@@ -107,7 +107,7 @@ public class objectFloat : MonoBehaviour
             dam.logCount++;
             dam.damRow[dam.logCount].SetActive(true);
             dam.logCount++;
-          
+
 
 
 

@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Total Logs needed to complete the layer is now" +  totalLogsNeededToCompleteDamLayer);
         }
 
-        if (currentWave == 7)
+        if (currentWave == 3)
         {
             SceneManager.LoadScene("Win");
         }
