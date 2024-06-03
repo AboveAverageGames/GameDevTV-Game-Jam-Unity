@@ -45,6 +45,7 @@ public class foodManagement : MonoBehaviour
             hungerVal = 1;
             failC++;
             decay = decayStore;
+            boy.SetActive(true);
         }
         if (hungerVal <= 0 && failC == 1)
         {
@@ -54,6 +55,7 @@ public class foodManagement : MonoBehaviour
             hungerVal = 1;
             decay = decayStore;
             failC++;
+            girl.SetActive(true);
         }
         if (hungerVal <= 0 && failC == 2)
         {
@@ -63,6 +65,7 @@ public class foodManagement : MonoBehaviour
             hungerVal = 1;
             decay = decayStore;
             failC++;
+            wife.SetActive(true);
         }
         if (hungerVal <= 0 && failC == 3)
         {

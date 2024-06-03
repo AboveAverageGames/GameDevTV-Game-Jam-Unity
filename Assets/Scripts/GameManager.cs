@@ -71,13 +71,16 @@ public class GameManager : MonoBehaviour
             //Increase spawner range
             spawner.damWidthIncrease = spawner.damWidthIncrease + 0.5f;
 
+            currentWave++;
+
             Debug.Log("Wave Complete");
+            Debug.Log("Current wave is" + currentWave);
         }
 
         if (waveCompleted)
         {
             //Each wave adds 2 more logs needed to complete a layer of the dam
-            totalLogsNeededToCompleteDamLayer = totalLogsNeededToCompleteDamLayer + 2;
+            totalLogsNeededToCompleteDamLayer = totalLogsNeededToCompleteDamLayer + 20;
 
             //Resets Wave Completed to false
             waveCompleted = false;

@@ -22,6 +22,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip dambuild;
     public AudioClip eating;
     public AudioClip deathSound;
+    public AudioClip pollution;
 
 
     public AudioClip waterRunning;

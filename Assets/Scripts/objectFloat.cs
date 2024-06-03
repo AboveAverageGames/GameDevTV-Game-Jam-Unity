@@ -84,6 +84,7 @@ public class objectFloat : MonoBehaviour
         {
             pMove.isSlowed = true;
             gameObject.SetActive(false);
+            audioManager.PlaySFX(audioManager.pollution);
         }
         if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Food")
         {
@@ -106,6 +107,8 @@ public class objectFloat : MonoBehaviour
             dam.logCount++;
             dam.damRow[dam.logCount].SetActive(true);
             dam.logCount++;
+          
+
 
 
             gameObject.tag = "Log";
@@ -115,7 +118,7 @@ public class objectFloat : MonoBehaviour
             speed = storedSpeed;
 
             //Game manager stuff
-            gameManager.logsPlacedThisLayer ++;
+            gameManager.logsPlacedThisLayer++;
             gameManager.logsPlacedThisLayer++;
         }
     }

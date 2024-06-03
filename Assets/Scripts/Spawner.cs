@@ -58,7 +58,7 @@ public class Spawner : MonoBehaviour
     // 1 or 2: Log, 2:Food 3:Pollution
     void RandomSpawner()
     {
-        randomItemToBeSpawned = Random.Range(1, 7);
+        randomItemToBeSpawned = Random.Range(1, 6);
 
         //50% chance for it to be log that is spawned
         if (randomItemToBeSpawned <= 3 && gameManager.canAnyMoreLogsBeSpawned)
