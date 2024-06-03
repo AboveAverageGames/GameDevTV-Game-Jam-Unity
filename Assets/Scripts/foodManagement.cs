@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class foodManagement : MonoBehaviour
@@ -66,6 +67,7 @@ public class foodManagement : MonoBehaviour
         if (hungerVal <= 0 && failC == 3)
         {
             print("GameOver");
+            SceneManager.LoadScene("Lose");
         }
     }
 }

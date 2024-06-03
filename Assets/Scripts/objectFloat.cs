@@ -101,8 +101,13 @@ public class objectFloat : MonoBehaviour
             audioManager.PlaySFX(audioManager.dambuild);
 
             pMove.carry = false;
+            //HERE WE BUILD DAM DOUBLE TIME
             dam.damRow[dam.logCount].SetActive(true);
             dam.logCount++;
+            dam.damRow[dam.logCount].SetActive(true);
+            dam.logCount++;
+
+
             gameObject.tag = "Log";
             GetComponent<BoxCollider>().isTrigger = false;
             transform.SetParent(null);
@@ -110,6 +115,7 @@ public class objectFloat : MonoBehaviour
             speed = storedSpeed;
 
             //Game manager stuff
+            gameManager.logsPlacedThisLayer ++;
             gameManager.logsPlacedThisLayer++;
         }
     }
