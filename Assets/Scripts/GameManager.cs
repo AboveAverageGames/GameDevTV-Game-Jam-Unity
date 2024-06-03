@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -82,6 +83,11 @@ public class GameManager : MonoBehaviour
             waveCompleted = false;
 
             Debug.Log("Total Logs needed to complete the layer is now" +  totalLogsNeededToCompleteDamLayer);
+        }
+
+        if (currentWave == 7)
+        {
+            SceneManager.LoadScene("Win");
         }
 
 
