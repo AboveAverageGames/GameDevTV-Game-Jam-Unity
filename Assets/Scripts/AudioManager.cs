@@ -7,20 +7,24 @@ public class AudioManager : MonoBehaviour
     [Header("----- Audio Source -----")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSouce;
+    [SerializeField] AudioSource AmbientMusic;
 
     [Header("----- Audio Clip -----")]
     public AudioClip backgroundMusic3FamilyAlive;
     public AudioClip backgroundMusic2FamilyAlive;
     public AudioClip backgroundMusic1FamilyAlive;
+    public AudioClip backgroundMusic0FamilyAlive;
+
+    public AudioClip LoseGame;
+    public AudioClip WinGame;
 
 
-    public AudioClip woodCollection;
-    public AudioClip playerDeathSound;
-    public AudioClip collisionWithDam;
-    public AudioClip nextLevelSound;
+    public AudioClip dambuild;
+    public AudioClip eating;
+    public AudioClip deathSound;
 
 
-    public AudioClip UISound;
+    public AudioClip waterRunning;
 
 
     //Plays the BG music on start up

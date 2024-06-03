@@ -13,11 +13,12 @@ public class PlayerController : MonoBehaviour
     public bool isSlowed = false;
     public bool carry = false;
 
+
     public GameManager gameManager;
 
     void Start()
     {
-    
+
         //Stores the speed
         storeSpeed = speed;
     }
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
         //Takes the Input from the new Input System (Left stick and W,A,S,D)
         move = context.ReadValue<Vector2>();
     }
+
 
 
     //Move Player
@@ -46,6 +48,8 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(movement), 1000f * Time.deltaTime);
         }
         }
+
+
 
     // Update is called once per frame
     void Update()

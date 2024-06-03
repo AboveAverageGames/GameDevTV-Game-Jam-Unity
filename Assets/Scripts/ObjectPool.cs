@@ -18,7 +18,10 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] private GameObject logPrefab1;
     [SerializeField] private GameObject logPrefab2;
     [SerializeField] private GameObject logPrefab3;
-    [SerializeField] private GameObject pollutionPrefab;
+
+    [SerializeField] private GameObject pollutionPrefab1;
+    [SerializeField] private GameObject pollutionPrefab2;
+
     [SerializeField] private GameObject foodPrefab;
 
 
@@ -39,7 +42,8 @@ public class ObjectPool : MonoBehaviour
         LogPool2();
         LogPool3();
 
-        PollutionPool();
+        PollutionPool1();
+
         FoodPool();
     }
 
@@ -90,13 +94,16 @@ public class ObjectPool : MonoBehaviour
 
     //Pollution Object Pooling here
 
-    void PollutionPool()
+    void PollutionPool1()
     {
         for (int i = 0; i < amountToPool; i++)
         {
-            GameObject obj = Instantiate(pollutionPrefab);
+            GameObject obj = Instantiate(pollutionPrefab1);
             obj.SetActive(false);
             pooledPollution.Add(obj);
+            GameObject obj2 = Instantiate(pollutionPrefab2);
+            obj2.SetActive(false);
+            pooledPollution.Add(obj2);
         }
     }
 

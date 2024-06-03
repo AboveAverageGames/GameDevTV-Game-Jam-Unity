@@ -155,3 +155,4 @@ MonoBehaviour:
   food: {fileID: 0}
   pMove: {fileID: 0}
   dam: {fileID: 0}
+  gameManager: {fileID: 0}

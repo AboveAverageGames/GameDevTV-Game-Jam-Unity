@@ -15,6 +15,8 @@ public class objectFloat : MonoBehaviour
 
     public GameManager gameManager;
 
+    public AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,9 @@ public class objectFloat : MonoBehaviour
 
         //Assigns Game Manager script
         gameManager = GameObject.Find("--- Game Manager ---").GetComponent<GameManager>();
+
+        //Audio Manager
+        audioManager = GameObject.Find("--- Audio Manager ---").GetComponent<AudioManager>();
 
         //Assigning Components
         food = GameObject.Find("Player").GetComponent<foodManagement>();
@@ -82,6 +87,9 @@ public class objectFloat : MonoBehaviour
         }
         if (collision.gameObject.tag == "Player" & this.gameObject.tag == "Food")
         {
+
+            audioManager.PlaySFX(audioManager.eating);
+
             food.hungerVal = food.hungerVal + foodGain;
             gameObject.SetActive(false);
         }
@@ -90,6 +98,8 @@ public class objectFloat : MonoBehaviour
     {
         if (collision.gameObject.tag == "Dam" & gameObject.tag == "HeldLog")
         {
+            audioManager.PlaySFX(audioManager.dambuild);
+
             pMove.carry = false;
             dam.damRow[dam.logCount].SetActive(true);
             dam.logCount++;

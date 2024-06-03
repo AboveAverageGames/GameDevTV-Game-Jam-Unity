@@ -9,11 +9,11 @@ public class buildTheDam : MonoBehaviour
     public Transform[] damT;
     int value12 = 0;
     public GameManager GM;
-    public GameObject Scene;
+    public GameObject Scene;    
     public GameObject WaterMax;
     int howManyLogs;
     public int logC = 0;
-    float speed = 0.01f;
+    float speed = 0.03f;
 
     //0.7 rise per wave
     //-2.2 start
@@ -21,6 +21,7 @@ public class buildTheDam : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         howManyLogs = GM.totalLogsNeededToCompleteDamLayer + GM.additionalLogsAllowedToBeSpawned;
         damT = gameObject.GetComponentsInChildren<Transform>();
         damRow = new GameObject[damT.Length];
@@ -43,12 +44,15 @@ public class buildTheDam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float step = speed * Time.deltaTime;
+
         if (damRow[logCount].tag == "Ignore")
         {
             logCount++;
         }
 
+        //Water rising stuff
+
+        float step = speed * Time.deltaTime;
         Scene.transform.position = Vector3.MoveTowards(Scene.transform.position, WaterMax.transform.position , step);
 
         if (GM.waveCompleted == true)

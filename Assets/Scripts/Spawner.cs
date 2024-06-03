@@ -48,7 +48,7 @@ public class Spawner : MonoBehaviour
     public Vector3 randomPlace()
     {
         //Finds a random X position on the Dam (WHICH INCREASES WITH EACH WAVE)
-        xAxisRandomSpawn = Random.Range((-11 - damWidthIncrease),(11 + damWidthIncrease));
+        xAxisRandomSpawn = Random.Range((-10 - damWidthIncrease),(10 + damWidthIncrease));
         return new Vector3 (xAxisRandomSpawn, 0, 45);
         
     }
@@ -58,19 +58,19 @@ public class Spawner : MonoBehaviour
     // 1 or 2: Log, 2:Food 3:Pollution
     void RandomSpawner()
     {
-        randomItemToBeSpawned = Random.Range(1, 5);
+        randomItemToBeSpawned = Random.Range(1, 7);
 
         //50% chance for it to be log that is spawned
-        if (randomItemToBeSpawned <=2 && gameManager.canAnyMoreLogsBeSpawned)
+        if (randomItemToBeSpawned <= 3 && gameManager.canAnyMoreLogsBeSpawned)
         {
             spawnLog();
             gameManager.logsSpawnedThisLayer++;
         }
-        else if (randomItemToBeSpawned == 3)
+        else if (randomItemToBeSpawned == 4)
         {
             spawnFood();
         }
-        else if (randomItemToBeSpawned == 4)
+        else if (randomItemToBeSpawned >= 5)
         {
             spawnPollution();
         }

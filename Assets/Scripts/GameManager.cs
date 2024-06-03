@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     //NOTE TO SELF will need 5 COMPLETE LAYERS of DAM to complete a WAVE
 
+    public Spawner spawner;
+
     public GameObject activeLogsInScene;
     public GameObject activeLogInPlayersMouth;
 
@@ -31,6 +33,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        spawner = GameObject.Find("--- Spawner ---").GetComponent<Spawner>();
+
         canAnyMoreLogsBeSpawned = true;
 
         //On start resets wave to 1
@@ -45,7 +49,7 @@ public class GameManager : MonoBehaviour
         {
             //In case spawn limit is reached but they have one in their mouth 
             canAnyMoreLogsBeSpawned = true;
-            logsSpawnedThisLayer = 0;
+            logsSpawnedThisLayer = 0;   
             //Adds one to layers completed this wave
             layersCompletedThisWave++;
             //Resets Logs placed THIS layer to 0
@@ -63,6 +67,9 @@ public class GameManager : MonoBehaviour
             //Resets the layers completed this wave
             layersCompletedThisWave = 0;
 
+            //Increase spawner range
+            spawner.damWidthIncrease = spawner.damWidthIncrease + 0.5f;
+
             Debug.Log("Wave Complete");
         }
 
@@ -78,7 +85,7 @@ public class GameManager : MonoBehaviour
         }
 
 
-
+        /*
         // -------------------------------------------- LOG SPAWN STUFF BELOW  -----------------------------------------
 
 
@@ -101,8 +108,7 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("GAME OVER YOU GOT NO LOGS LEFT TO SPAWN OR ON THE SCREEN. NO OPTIONS AND NO DAM FAMILY");
             }
- 
-
+        */
        
     } 
 }
