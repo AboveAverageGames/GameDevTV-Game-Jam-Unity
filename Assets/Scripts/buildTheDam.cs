@@ -13,7 +13,7 @@ public class buildTheDam : MonoBehaviour
     public GameObject WaterMax;
     int howManyLogs;
     public int logC = 0;
-    float speed = 0.08f;
+    float speed = 0.05f;
 
     //0.7 rise per wave
     //-2.2 start
