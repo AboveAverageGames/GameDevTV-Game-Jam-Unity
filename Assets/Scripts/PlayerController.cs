@@ -60,8 +60,32 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(Slowed());
             isSlowed = false;
         }
+        if (transform.position.x <= -24)
+        {
+            transform.position = new Vector3(-24, transform.position.y, transform.position.z);
+        }
+        if (transform.position.x >= 24)
+        {
+            transform.position = new Vector3(24, transform.position.y, transform.position.z);
+        }
+        if (transform.position.y >= 0.2f)
+        {
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        }
+        if (transform.position.y <= -0.2f)
+        {
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        }
+        if (transform.position.z <= -7.3f)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -7);
+        }
+        if (transform.position.z >= 38)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 38);
+        }
     }
-    
+
     IEnumerator Slowed()
     {
         speed = speed * slow;

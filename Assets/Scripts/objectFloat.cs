@@ -61,6 +61,11 @@ public class objectFloat : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        if (gameObject.tag == "HeldLog")
+        {
+            transform.localRotation = Quaternion.Euler(90, 0, 180);
+            transform.localPosition = new Vector3(0, 0, 2);
+        }
 
     }
     void OnCollisionEnter(Collision collision)
